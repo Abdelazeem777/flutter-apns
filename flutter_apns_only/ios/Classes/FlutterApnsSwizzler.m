@@ -57,12 +57,7 @@ static int swizzleCounter;
     if ([self getFlag:@"disable_swizzling" defaultValue: NO]) {
         return;
     }
-
-    if ([self getFlag:@"disable_firebase_core" defaultValue: YES]) {
-        [self disablePluginNamed:@"FLTFirebaseCorePlugin"];
-    }
-
-    [self disablePluginNamed:@"FLTFirebaseMessagingPlugin"];
+   
 }
 
 @end
